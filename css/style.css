@@ -43,7 +43,7 @@ html{
     border-bottom-right-radius: 5px;
     margin-left: 10px;
     border: none;
-    width: 70%;
+    width: 50%;
     font-size: 1rem;
 }
 .nav-search input:focus{
@@ -54,7 +54,7 @@ html{
     height: 100%;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     margin-left: 20px;
 }
 
@@ -70,13 +70,14 @@ html{
     align-items: center;
     justify-content: center;
     height: 40px;
-    padding-right: 10px;
 }
 .nav-right a .icon i  {
     padding: 0 10px;
 }
 .nav-right a .icon1 {
     border-radius: 5px;
+    padding-right: 10px;
+
 }
 .nav-right a .icon1:hover{
     background-color: #2A55E5;
@@ -115,8 +116,9 @@ html{
     padding: 10px;
     object-fit: cover;
     overflow: hidden;
-
+    color: var();
 }
+
 
 /* ------------------Hero Section -------------------- */
 .hero{
@@ -409,4 +411,107 @@ html{
 }
 .icons a i{
     padding-left: 40px;
+}
+@media (max-width:1340px){
+    .sub-hero{
+        background-color: white;
+        overflow-x: auto;
+    }
+    .sub-hero::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+@media (max-width:1140px){
+    .pd-pannel{
+        width: 100%;
+        background-color: white;
+        overflow-x: auto;
+    }
+    .pd-pannel::-webkit-scrollbar{
+        display: none;
+    }
+    
+}
+@media (max-width:1140px){
+    .sub-hero{
+        background-color: white;
+        overflow-x: auto;
+    }
+    .sub-hero::-webkit-scrollbar{
+        display: none;
+    }
+    @media (max-width:950px){
+        .product-left{
+            width: 100%;
+            background-color: white;
+        }
+        /* .product-left::-webkit-scrollbar{
+            display: none;
+        } */
+        .products{
+            width: 100%;
+        }
+        .product-banner-right{
+            display: none;
+            
+        }
+        .product{
+            width: 250px;
+            overflow-x: auto;
+
+        }
+        .product::-webkit-scrollbar{
+            display: none;
+
+        }
+        .product-pd-pannel::-webkit-scrollbar{
+            display: none;
+        }
+        .nav-right a .icon p  {
+            /* padding: 0 10px; */
+            display: none;
+        }
+        .nav-right{
+            justify-content: space-between;
+            width: 30%;
+        }
+    }
+
+    
+}
+@media (max-width:790px){
+    .navbar{
+        justify-content: center;
+    }
+    .nav-left{
+        width: 60%;
+    }
+    .nav-search input{
+        width: 70%;
+    }
+    .nav-right{
+        width: 30%;
+        justify-content: end;
+    }
+    .nav-right a .icon4{
+        display: none;
+    }
+    .nav-right a .icon3{
+        display: none;
+    }
+    /* .products{
+        flex-direction: column;
+        width: 100%;
+    }
+    .product{
+        width: 95%;
+    }
+    .product-img{
+        
+    }
+    .product-img img{
+        float: left;
+        
+    } */
 }
